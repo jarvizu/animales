@@ -23,7 +23,7 @@
   <body role="document">
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -36,9 +36,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="#">Adopta</a></li>
+            <li><a href="#about">Extraviados</a></li>
+            <li><a href="#contact">Encontrados</a></li>
+            <li><a href="#contact">Denuncias</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -56,14 +57,44 @@
       </div>
     </nav>
 
-    <div class="container theme-showcase" role="main">
-
+    <div class="container">
+        
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Theme example</h1>
-        <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
+      <div class="row">
+          <div class="col-md-3">
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-md-4 control-label">Ubicación</label>
+    <div class="col-md-8">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Ubicación">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-md-4 control-label">Tipo</label>
+    <div class="col-md-8">
+      <input type="text" class="form-control" id="inputPassword3" placeholder="Tipo">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
       </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
 
+
+          </div>
+          <div class="col-md-9">Contenido</div>
+      </div>
 	<?php 
 		echo $content; 
 	?>
